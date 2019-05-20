@@ -12,6 +12,9 @@
 		91F50264228D215100B7287A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F50262228D215100B7287A /* Main.storyboard */; };
 		91F50266228D215400B7287A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F50265228D215400B7287A /* Assets.xcassets */; };
 		91F50269228D215400B7287A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F50267228D215400B7287A /* LaunchScreen.storyboard */; };
+		91F5027C228FC9A600B7287A /* ImagePlaceholderLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F5027B228FC9A600B7287A /* ImagePlaceholderLoader.swift */; };
+		91F5027E228FC9B300B7287A /* ShowAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F5027D228FC9B300B7287A /* ShowAlertView.swift */; };
+		91F50280228FCB0C00B7287A /* RadiusCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F5027F228FCB0C00B7287A /* RadiusCornerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		91F50265228D215400B7287A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91F50268228D215400B7287A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91F5026A228D215400B7287A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F5027B228FC9A600B7287A /* ImagePlaceholderLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePlaceholderLoader.swift; sourceTree = "<group>"; };
+		91F5027D228FC9B300B7287A /* ShowAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowAlertView.swift; sourceTree = "<group>"; };
+		91F5027F228FCB0C00B7287A /* RadiusCornerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusCornerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		91F5025D228D215100B7287A /* PioneerApp */ = {
 			isa = PBXGroup;
 			children = (
+				91F5027A228FC99300B7287A /* HelperClasses */,
+				91F50279228FC98300B7287A /* Controller */,
+				91F50278228FC97E00B7287A /* View */,
+				91F50277228FC97500B7287A /* Model */,
 				91F5025E228D215100B7287A /* AppDelegate.swift */,
-				91F50260228D215100B7287A /* ViewController.swift */,
-				91F50262228D215100B7287A /* Main.storyboard */,
 				91F50265228D215400B7287A /* Assets.xcassets */,
 				91F50267228D215400B7287A /* LaunchScreen.storyboard */,
 				91F5026A228D215400B7287A /* Info.plist */,
 			);
 			path = PioneerApp;
+			sourceTree = "<group>";
+		};
+		91F50277228FC97500B7287A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91F50278228FC97E00B7287A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				91F50262228D215100B7287A /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91F50279228FC98300B7287A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				91F50260228D215100B7287A /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		91F5027A228FC99300B7287A /* HelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				91F5027D228FC9B300B7287A /* ShowAlertView.swift */,
+				91F5027B228FC9A600B7287A /* ImagePlaceholderLoader.swift */,
+				91F5027F228FCB0C00B7287A /* RadiusCornerView.swift */,
+			);
+			path = HelperClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91F50280228FCB0C00B7287A /* RadiusCornerView.swift in Sources */,
 				91F50261228D215100B7287A /* ViewController.swift in Sources */,
+				91F5027C228FC9A600B7287A /* ImagePlaceholderLoader.swift in Sources */,
+				91F5027E228FC9B300B7287A /* ShowAlertView.swift in Sources */,
 				91F5025F228D215100B7287A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
