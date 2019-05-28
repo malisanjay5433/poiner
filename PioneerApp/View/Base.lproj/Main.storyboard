@@ -566,7 +566,7 @@
                                     </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NuS-5j-skP">
                                         <rect key="frame" x="8" y="103" width="359" height="535"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="320" id="Fz7-gy-lPh" customClass="FeedCell" customModule="PioneerApp" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="359" height="320"/>
@@ -781,7 +781,7 @@
                                         <segments>
                                             <segment title="देश "/>
                                             <segment title="विदेश"/>
-                                            <segment title="राज्य "/>
+                                            <segment title="हेल्थ"/>
                                             <segment title="टेक्नॉलॉजी"/>
                                             <segment title="फ़ोटो गेलरी"/>
                                         </segments>

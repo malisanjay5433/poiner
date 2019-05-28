@@ -8,7 +8,7 @@
 
 import Foundation
 struct CategoryModel:Decodable{
-//    let meta:DataModel?
+    let meta:CategoryData?
     let data:[CategoryDataModel]?
 }
 struct CategoryDataModel:Decodable{
@@ -23,4 +23,13 @@ struct CategoryDataModel:Decodable{
     let state:String?
     let city:String?
     let created_date:String?
+}
+struct CategoryData:Decodable {
+    let totalRecords:Int?
+    let next:String?
+//    JWT-Token : ""
+//    totalRecords : 17
+//    page-size : 10
+//    next : "http://159.89.162.248/v1/dev/news/?category__category=Desh&page=2"
+//    previous : null
 }
