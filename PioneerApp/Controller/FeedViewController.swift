@@ -166,7 +166,7 @@ extension FeedViewController{
 //            }
 //        }
 //    }
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {        
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let scrollViewContentHeight = tableView.contentSize.height
         let scrollOffsetThreshold = scrollViewContentHeight - tableView.bounds.size.height
         if(scrollView.contentOffset.y > scrollOffsetThreshold && tableView.isDragging) {

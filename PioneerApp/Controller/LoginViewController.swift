@@ -19,22 +19,26 @@ class LoginViewController: UIViewController,ShowAlertView {
     @IBOutlet weak var password_TextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-        username_TextFiled.text = "ram@ex.com"
-        password_TextField.text = "deep@123"
+//        username_TextFiled.text = "ram@ex.com"
+//        password_TextField.text = "deep@123"
     }
     @IBAction func loginBtn(_ sender: Any) {
         if username_TextFiled.text != "" ||  password_TextField.text != ""{
-            //            userLogin()
             login()
         }else{
-            showAlert(title:"", message:"Missing username or Passwowrd")
+            if username_TextFiled.text == ""{
+                showAlert(title:"", message:"Enter your username")
+            }else if password_TextField.text == ""{
+                showAlert(title:"", message:"Enter your password")
+                
+            }else{
         }
     }
 }
+}
 extension LoginViewController{
     func login(){
-        let param = ["username":"ram@ex.com","password":"deep@123"]
-        
+        let param = ["username":username_TextFiled.text!,"password":password_TextField.text!]
         DataManager.POST(api:APIConstants.LR_ENDPOINT.login, param:param, moduleId:"", method:"POST") { (data, response, error) in
             guard  data != nil else {
                 return
@@ -67,5 +71,4 @@ extension LoginViewController{
             }
         }
     }
-    
 }

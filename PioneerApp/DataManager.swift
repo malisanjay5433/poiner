@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Darwin
 import Alamofire
+import SVProgressHUD
 public  class DataManager{
     internal var baseURL: URL
     internal let session = URLSession.shared
@@ -17,6 +18,12 @@ public  class DataManager{
         self.baseURL = baseURL
     }
     public static func POST(api:String,param:[String:Any],moduleId:String,method:String,completion:@escaping (_ data:Data?, _ response:URLResponse?, _ error:Error?) -> Void){
+
+        SVProgressHUD.show()
+        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType(rawValue : 3)!)
+        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle(rawValue : 2)!)
+        SVProgressHUD.setForegroundColor(UIColor.yellow)                 // default is [UIColor blackColor], only used for SVProgressHUDStyleCustom
+        SVProgressHUD.setBackgroundColor(UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.3))
         let headers = [
             "Content-Type": "application/x-www-form-urlencoded"
         ]
@@ -25,18 +32,19 @@ public  class DataManager{
             switch(response.result) {
             case.success(let data):
                 print("success",data)
-                if let result = data as? [String:Any]{
-                    if let message  = result["result"] as? [String:Any]{
-                        if message["message"] as? String == "Forbidden Access"{
-                            let param = ["username":"ram@ex.com","password":"deep@123"]
-                            self.generateToken(api:"", param:param, moduleId:"", method: "POST", completion: { (data,res,error) in
-                                
-                            })
-                        }
-                    }
-                }else{
-                  completion(response.data,nil,response.error)
-                }
+//                if let result = data as? [String:Any]{
+//                    if let message  = result["result"] as? [String:Any]{
+//                        if message["message"] as? String == "Forbidden Access"{
+//                            let param = ["username":"ram@ex.com","password":"deep@123"]
+//                            self.generateToken(api:"", param:param, moduleId:"", method: "POST", completion: { (data,res,error) in
+//
+//                            })
+//                        }
+//                    }
+//                }else{
+                  SVProgressHUD.dismiss()
+                 completion(response.data,nil,response.error)
+//                }
                 
             case.failure(let error):
                 print("Not Success",error)
@@ -46,6 +54,12 @@ public  class DataManager{
     
     
     public static func generateToken(api:String,param:[String:Any],moduleId:String,method:String,completion:@escaping (_ data:Data?, _ response:URLResponse?, _ error:Error?) -> Void){
+        SVProgressHUD.show()
+        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType(rawValue : 3)!)
+        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle(rawValue : 2)!)
+        SVProgressHUD.setForegroundColor(UIColor.yellow)                 // default is [UIColor blackColor], only used for SVProgressHUDStyleCustom
+        SVProgressHUD.setBackgroundColor(UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.3))
+        
         let headers = [
             "Content-Type": "application/json"]
 //            "Authorization":"Bearer \(UserDefaultDetails.init().getRefreshToken())"
@@ -57,7 +71,10 @@ public  class DataManager{
             switch(response.result) {
             case.success(let data):
                 print("success",data)
+                SVProgressHUD.dismiss()
+
                 completion(response.data,nil,response.error)
+
             case.failure(let error):
                 print("Not Success",error)
             }
@@ -65,6 +82,12 @@ public  class DataManager{
     }
 
     public static func GET(api:String,method:String,completion:@escaping (_ data:Data?, _ response:URLResponse?, _ error:Error?) -> Void){
+        SVProgressHUD.show()
+        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType(rawValue : 3)!)
+        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle(rawValue : 2)!)
+        SVProgressHUD.setForegroundColor(UIColor.yellow)                 // default is [UIColor blackColor], only used for SVProgressHUDStyleCustom
+        SVProgressHUD.setBackgroundColor(UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.3))
+        
         let headers = ["Content-Type": "application/json"]
 //                       "Authorization":"Bearer \(UserDefaultDetails.init().getToken())"]
         print(headers)
@@ -72,6 +95,8 @@ public  class DataManager{
             switch(response.result) {
             case.success(let data):
                 print("success",data)
+                SVProgressHUD.dismiss()
+
                 completion(response.data,nil,response.error)
             case.failure(let error):
                 print("Not Success",error)
@@ -80,6 +105,12 @@ public  class DataManager{
     }
     
     public static func getRequest( api:String,method:String,ref : UIViewController?, completion:@escaping (_ data:Data?, _ response:URLResponse?, _ error:Error?) -> Void){
+        SVProgressHUD.show()
+        SVProgressHUD.setDefaultMaskType(SVProgressHUDMaskType(rawValue : 3)!)
+        SVProgressHUD.setDefaultStyle(SVProgressHUDStyle(rawValue : 2)!)
+        SVProgressHUD.setForegroundColor(UIColor.yellow)                 // default is [UIColor blackColor], only used for SVProgressHUDStyleCustom
+        SVProgressHUD.setBackgroundColor(UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.3))
+        
         let userDefault = UserDefaults()
         guard let url = URL(string: APIConstants.ROOT.qa_url + api) else { return }
         var request = URLRequest(url:url)
@@ -136,6 +167,8 @@ public  class DataManager{
                     return
                 }
                 //                SVProgressHUD.dismiss()
+                SVProgressHUD.dismiss()
+
                 completion(data,response,nil)
             }
             //            SVProgressHUD.dismiss()

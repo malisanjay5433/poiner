@@ -34,6 +34,7 @@
 		917275ED229AE87100E51D26 /* ArticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917275EC229AE87100E51D26 /* ArticlesViewController.swift */; };
 		917275F0229AED4100E51D26 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917275EF229AED4100E51D26 /* FeedCell.swift */; };
 		917275F2229AF04B00E51D26 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917275F1229AF04B00E51D26 /* CategoryModel.swift */; };
+		917275F4229E568A00E51D26 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917275F3229E568A00E51D26 /* SignupViewController.swift */; };
 		918B3A962292F3B800F3C014 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B3A952292F3B800F3C014 /* FeedViewController.swift */; };
 		91F5025F228D215100B7287A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F5025E228D215100B7287A /* AppDelegate.swift */; };
 		91F50261228D215100B7287A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F50260228D215100B7287A /* LoginViewController.swift */; };
@@ -70,6 +71,7 @@
 		917275EC229AE87100E51D26 /* ArticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticlesViewController.swift; sourceTree = "<group>"; };
 		917275EF229AED4100E51D26 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		917275F1229AF04B00E51D26 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryModel.swift; path = PioneerApp/CategoryModel.swift; sourceTree = SOURCE_ROOT; };
+		917275F3229E568A00E51D26 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		918B3A952292F3B800F3C014 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		91F5025B228D215100B7287A /* PioneerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PioneerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F5025E228D215100B7287A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				918B3A952292F3B800F3C014 /* FeedViewController.swift */,
 				917275EA229AB4BC00E51D26 /* ProfileViewController.swift */,
 				917275EC229AE87100E51D26 /* ArticlesViewController.swift */,
+				917275F3229E568A00E51D26 /* SignupViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 				917275D6229A852F00E51D26 /* NewCustomTextField.swift in Sources */,
 				917275EB229AB4BC00E51D26 /* ProfileViewController.swift in Sources */,
 				917275E5229A852F00E51D26 /* SSBadgeButton.swift in Sources */,
+				917275F4229E568A00E51D26 /* SignupViewController.swift in Sources */,
 				917275E3229A852F00E51D26 /* TokenManager.swift in Sources */,
 				917275E7229A852F00E51D26 /* SegmentioBuilder.swift in Sources */,
 				917275D9229A852F00E51D26 /* ImagePlaceholderLoader.swift in Sources */,

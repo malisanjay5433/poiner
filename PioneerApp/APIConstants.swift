@@ -27,7 +27,7 @@ public class APIConstants{
   //  "/RefreshToken"
     public  struct LR_ENDPOINT{
         static let login = "users/login/"
-        static let createUser = "GenerateToken"
+        static let createUser = "users/create_user/"
         static let users_Details = "users/details"
         static let generateToken = "token/"
         static let searchbar = "GetPointBalance"
