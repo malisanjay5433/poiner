@@ -30,11 +30,13 @@ public class APIConstants{
         static let createUser = "users/create_user/"
         static let users_Details = "users/details"
         static let generateToken = "token/"
+        static let like = "news/like_news/"
         static let searchbar = "GetPointBalance"
         static let categoryDesh = "news/?category__category=Desh"
         static let categoryVidesh = "news/?category__category=Videsh"
         static let categoryTechnology = "news/?category__category=Technology"
         static let categoryPhotos = "news/?category__category=photo-gallery"
         static let categoryHealth = "news/?category__category=Health"
+        static let searchBox = "/news/?search="
     }
 }

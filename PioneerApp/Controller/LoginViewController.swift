@@ -19,8 +19,8 @@ class LoginViewController: UIViewController,ShowAlertView {
     @IBOutlet weak var password_TextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-//        username_TextFiled.text = "ram@ex.com"
-//        password_TextField.text = "deep@123"
+        username_TextFiled.text = "ram@ex.com"
+        password_TextField.text = "deep@123"
     }
     @IBAction func loginBtn(_ sender: Any) {
         if username_TextFiled.text != "" ||  password_TextField.text != ""{

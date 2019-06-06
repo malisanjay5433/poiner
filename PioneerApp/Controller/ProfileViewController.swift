@@ -37,16 +37,18 @@ class ProfileViewController: UIViewController,ShowAlertView{
     @IBOutlet weak var cityText: UITextField!
     @IBOutlet weak var StateText: UITextField!
     @IBOutlet weak var countryText: UITextField!
+    @IBOutlet weak var searchbox: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-//        profile()
-        getDetails()
+        profile()
+//        getDetails()
     }
 
 }
 extension ProfileViewController{
     func profile(){
-        DataManager.GET(api:APIConstants.LR_ENDPOINT.users_Details , method:"GET") { (data, response, error) in
+        DataManager.GETBearer(api:APIConstants.LR_ENDPOINT.users_Details , method:"GET") { (data, response, error) in
             guard  data != nil else {
                 return
             }

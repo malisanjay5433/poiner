@@ -41,6 +41,7 @@
 		91F50264228D215100B7287A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F50262228D215100B7287A /* Main.storyboard */; };
 		91F50266228D215400B7287A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91F50265228D215400B7287A /* Assets.xcassets */; };
 		91F50269228D215400B7287A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F50267228D215400B7287A /* LaunchScreen.storyboard */; };
+		91F6017722A6A3BB00F57291 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F6017622A6A3BB00F57291 /* DetailPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		91F50265228D215400B7287A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91F50268228D215400B7287A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91F5026A228D215400B7287A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91F6017622A6A3BB00F57291 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
 		9F7AFE3782256778550B2564 /* Pods-PioneerApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PioneerApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PioneerApp/Pods-PioneerApp.debug.xcconfig"; sourceTree = "<group>"; };
 		E91D018E4B836CF9B8EA5120 /* Pods_PioneerApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PioneerApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -194,6 +196,7 @@
 		91F50279228FC98300B7287A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				91F6017622A6A3BB00F57291 /* DetailPageViewController.swift */,
 				917275EE229AED2700E51D26 /* Cell */,
 				91F50260228D215100B7287A /* LoginViewController.swift */,
 				918B3A952292F3B800F3C014 /* FeedViewController.swift */,
@@ -359,6 +362,7 @@
 				917275E1229A852F00E51D26 /* File.swift in Sources */,
 				917275DF229A852F00E51D26 /* ProceedButton.swift in Sources */,
 				917275D4229A852F00E51D26 /* UserDefaultDetails.swift in Sources */,
+				91F6017722A6A3BB00F57291 /* DetailPageViewController.swift in Sources */,
 				917275F0229AED4100E51D26 /* FeedCell.swift in Sources */,
 				917275ED229AE87100E51D26 /* ArticlesViewController.swift in Sources */,
 				91F5025F228D215100B7287A /* AppDelegate.swift in Sources */,
@@ -513,7 +517,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RY9E5VL5NF;
+				DEVELOPMENT_TEAM = KHB392A8H8;
 				INFOPLIST_FILE = PioneerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -532,7 +536,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RY9E5VL5NF;
+				DEVELOPMENT_TEAM = KHB392A8H8;
 				INFOPLIST_FILE = PioneerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

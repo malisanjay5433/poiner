@@ -9,7 +9,6 @@
 import UIKit
 
 class FeedCell: UITableViewCell {
-    
     @IBOutlet weak var dateLbl: UILabel!
     @IBOutlet weak var bulletinLbl: UILabel!
     @IBOutlet weak var newlbl: UILabel!
@@ -17,6 +16,7 @@ class FeedCell: UITableViewCell {
     @IBOutlet weak var shareLbl: UILabel!
     @IBOutlet weak var commentBl: NSLayoutConstraint!
     @IBOutlet weak var likeslbl: UILabel!
+    @IBOutlet weak var likeBtn: UIButton!
     @IBOutlet weak var viewsLbl: UILabel!
     @IBOutlet weak var imageBanner: ImagePlaceholderLoader!
 
@@ -27,5 +27,7 @@ class FeedCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+        
     }
+    
 }
