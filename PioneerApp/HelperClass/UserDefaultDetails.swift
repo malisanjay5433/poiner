@@ -290,7 +290,7 @@ struct UserDefaultDetails{
     }
     func getToken() ->(String){
         let refreshToken = UserDefaults.standard.value(forKey: "Token")
-        return refreshToken as! String
+        return refreshToken as? String ?? ""
     }
 }
 

@@ -20,7 +20,8 @@ class DetailPageViewController: UIViewController {
     @IBOutlet weak var viewsLbl: UILabel!
     @IBOutlet weak var imageBanner: ImagePlaceholderLoader!
     var categoryData1:CategoryDataModel?
-    
+    @IBOutlet weak var scrollView: UIScrollView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         let imageUrl = categoryData1!.get_images?.first
@@ -49,5 +50,9 @@ class DetailPageViewController: UIViewController {
     }
     @IBAction func BackBtn(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    override func viewWillLayoutSubviews(){
+        super.viewWillLayoutSubviews()
+        scrollView.contentSize = CGSize(width: 375, height: 800 * 2)
     }
 }

@@ -19,10 +19,11 @@ struct CategoryDataModel:Decodable{
     let like:Int?
     let visit:Int?
 //    let tag:Int?
-//    let category:String?
+    let url:String?
     let state:String?
     let city:String?
     let created_date:String?
+    let name:String?
 }
 struct CategoryData:Decodable {
     let totalRecords:Int?

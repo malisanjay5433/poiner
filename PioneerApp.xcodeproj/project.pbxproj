@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		582EBC2B53198FDE31EB2057 /* Pods_PioneerApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E91D018E4B836CF9B8EA5120 /* Pods_PioneerApp.framework */; };
+		912CD60022ABB89A00648472 /* OTPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 912CD5FF22ABB89A00648472 /* OTPViewController.swift */; };
 		917275B4229988EA00E51D26 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917275B3229988EA00E51D26 /* DataManager.swift */; };
 		917275B62299892100E51D26 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917275B52299892000E51D26 /* APIConstants.swift */; };
 		917275D2229A852F00E51D26 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917275B8229A852F00E51D26 /* Constants.swift */; };
@@ -36,6 +37,9 @@
 		917275F2229AF04B00E51D26 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917275F1229AF04B00E51D26 /* CategoryModel.swift */; };
 		917275F4229E568A00E51D26 /* SignupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917275F3229E568A00E51D26 /* SignupViewController.swift */; };
 		918B3A962292F3B800F3C014 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918B3A952292F3B800F3C014 /* FeedViewController.swift */; };
+		919D3DAA22AE262A004AF5D3 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919D3DA922AE262A004AF5D3 /* MoreViewController.swift */; };
+		919D3DAC22AE2D9B004AF5D3 /* VideoPlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919D3DAB22AE2D9A004AF5D3 /* VideoPlayerCell.swift */; };
+		919D3DAE22AE2DAC004AF5D3 /* VideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919D3DAD22AE2DAC004AF5D3 /* VideosViewController.swift */; };
 		91F5025F228D215100B7287A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F5025E228D215100B7287A /* AppDelegate.swift */; };
 		91F50261228D215100B7287A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91F50260228D215100B7287A /* LoginViewController.swift */; };
 		91F50264228D215100B7287A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91F50262228D215100B7287A /* Main.storyboard */; };
@@ -46,6 +50,7 @@
 
 /* Begin PBXFileReference section */
 		8F9424E8A7543023849592A5 /* Pods-PioneerApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PioneerApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PioneerApp/Pods-PioneerApp.release.xcconfig"; sourceTree = "<group>"; };
+		912CD5FF22ABB89A00648472 /* OTPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewController.swift; sourceTree = "<group>"; };
 		917275B3229988EA00E51D26 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		917275B52299892000E51D26 /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		917275B8229A852F00E51D26 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -74,6 +79,9 @@
 		917275F1229AF04B00E51D26 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CategoryModel.swift; path = PioneerApp/CategoryModel.swift; sourceTree = SOURCE_ROOT; };
 		917275F3229E568A00E51D26 /* SignupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewController.swift; sourceTree = "<group>"; };
 		918B3A952292F3B800F3C014 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		919D3DA922AE262A004AF5D3 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		919D3DAB22AE2D9A004AF5D3 /* VideoPlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerCell.swift; sourceTree = "<group>"; };
+		919D3DAD22AE2DAC004AF5D3 /* VideosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideosViewController.swift; sourceTree = "<group>"; };
 		91F5025B228D215100B7287A /* PioneerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PioneerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91F5025E228D215100B7287A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		91F50260228D215100B7287A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +145,7 @@
 		917275EE229AED2700E51D26 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				919D3DAB22AE2D9A004AF5D3 /* VideoPlayerCell.swift */,
 				917275EF229AED4100E51D26 /* FeedCell.swift */,
 			);
 			path = Cell;
@@ -196,6 +205,7 @@
 		91F50279228FC98300B7287A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				919D3DAD22AE2DAC004AF5D3 /* VideosViewController.swift */,
 				91F6017622A6A3BB00F57291 /* DetailPageViewController.swift */,
 				917275EE229AED2700E51D26 /* Cell */,
 				91F50260228D215100B7287A /* LoginViewController.swift */,
@@ -203,6 +213,8 @@
 				917275EA229AB4BC00E51D26 /* ProfileViewController.swift */,
 				917275EC229AE87100E51D26 /* ArticlesViewController.swift */,
 				917275F3229E568A00E51D26 /* SignupViewController.swift */,
+				912CD5FF22ABB89A00648472 /* OTPViewController.swift */,
+				919D3DA922AE262A004AF5D3 /* MoreViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -318,6 +330,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/YouTubePlayer/YouTubePlayer.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -326,6 +339,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouTubePlayer.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -343,16 +357,19 @@
 				91F50261228D215100B7287A /* LoginViewController.swift in Sources */,
 				917275E6229A852F00E51D26 /* GradientView.swift in Sources */,
 				917275D8229A852F00E51D26 /* UIColor.swift in Sources */,
+				912CD60022ABB89A00648472 /* OTPViewController.swift in Sources */,
 				917275B4229988EA00E51D26 /* DataManager.swift in Sources */,
 				917275B62299892100E51D26 /* APIConstants.swift in Sources */,
 				917275E4229A852F00E51D26 /* AppSubmitButton.swift in Sources */,
 				917275E9229A852F00E51D26 /* AppearanceConfigurator.swift in Sources */,
 				917275D7229A852F00E51D26 /* CustomUI.swift in Sources */,
+				919D3DAE22AE2DAC004AF5D3 /* VideosViewController.swift in Sources */,
 				917275D6229A852F00E51D26 /* NewCustomTextField.swift in Sources */,
 				917275EB229AB4BC00E51D26 /* ProfileViewController.swift in Sources */,
 				917275E5229A852F00E51D26 /* SSBadgeButton.swift in Sources */,
 				917275F4229E568A00E51D26 /* SignupViewController.swift in Sources */,
 				917275E3229A852F00E51D26 /* TokenManager.swift in Sources */,
+				919D3DAA22AE262A004AF5D3 /* MoreViewController.swift in Sources */,
 				917275E7229A852F00E51D26 /* SegmentioBuilder.swift in Sources */,
 				917275D9229A852F00E51D26 /* ImagePlaceholderLoader.swift in Sources */,
 				918B3A962292F3B800F3C014 /* FeedViewController.swift in Sources */,
@@ -363,6 +380,7 @@
 				917275DF229A852F00E51D26 /* ProceedButton.swift in Sources */,
 				917275D4229A852F00E51D26 /* UserDefaultDetails.swift in Sources */,
 				91F6017722A6A3BB00F57291 /* DetailPageViewController.swift in Sources */,
+				919D3DAC22AE2D9B004AF5D3 /* VideoPlayerCell.swift in Sources */,
 				917275F0229AED4100E51D26 /* FeedCell.swift in Sources */,
 				917275ED229AE87100E51D26 /* ArticlesViewController.swift in Sources */,
 				91F5025F228D215100B7287A /* AppDelegate.swift in Sources */,
@@ -516,17 +534,19 @@
 			baseConfigurationReference = 9F7AFE3782256778550B2564 /* Pods-PioneerApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KHB392A8H8;
+				DEVELOPMENT_TEAM = ALY6ZJ327M;
 				INFOPLIST_FILE = PioneerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.theappmaker.PioneerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thecodeacademy.PioneerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -535,17 +555,19 @@
 			baseConfigurationReference = 8F9424E8A7543023849592A5 /* Pods-PioneerApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KHB392A8H8;
+				DEVELOPMENT_TEAM = ALY6ZJ327M;
 				INFOPLIST_FILE = PioneerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.theappmaker.PioneerApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thecodeacademy.PioneerApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

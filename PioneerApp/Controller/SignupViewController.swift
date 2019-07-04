@@ -19,14 +19,11 @@ class SignupViewController: UIViewController,ShowAlertView{
     @IBOutlet weak var emailID: UITextField!
     @IBOutlet weak var phoneNo: UITextField!
     @IBOutlet weak var createPassword: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     @IBAction func receiveNotification(_ sender: Any) {
-        
-    }
+}
     @IBAction func createAccountBtn(_ sender: Any) {
         if usernameTxt.text == ""{
             showAlert(title:"", message:"Enter UserName")
@@ -39,7 +36,7 @@ class SignupViewController: UIViewController,ShowAlertView{
         }else if createPassword.text == ""{
             showAlert(title:"", message:"Enter Password")
         }else{
-            let param = ["first_name":usernameTxt.text!,"last_name":"--","email":emailID.text!,"referred_by":"","password":phoneNo.text!,"phoneno":phoneNo.text!]
+            let param = ["first_name":usernameTxt.text!,"last_name":"--","email":emailID.text!,"referred_by":"","password":createPassword.text!,"phoneno":phoneNo.text!]
             DataManager.POST(api:APIConstants.LR_ENDPOINT.createUser, param:param, moduleId:"", method:"POST") { (data, response, error) in
                 guard  data != nil else {
                     return
@@ -55,20 +52,26 @@ class SignupViewController: UIViewController,ShowAlertView{
                 if let stringData = String(data: data!, encoding: String.Encoding.utf8) {
                     print("json data = \(stringData)") //JSONSerialization
                 }
+                
+                
                 do{
                     let json = try decoder.decode(SignUpModel.self, from: data!)
                     if json.result?.status == 200{
                         
+                        if json.result?.message == "This email address already exists."{
+                            self.showAlert(title:"", message: json.result?.message ?? "Sorry something went wrong")
+                            return
+                        }else{
                         DispatchQueue.main.async {
                             let alertController = UIAlertController(title:"", message: (json.result?.message)!, preferredStyle: .alert)
                             alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                                 self.performSegue(withIdentifier:"SingUptoLogin", sender: nil)
                             }))
                             self.present(alertController, animated: true, completion: nil)
-                            
+                        }
                         }
                     }else{
-                        self.showAlert(title:"", message: "Sorry something went wrong")
+                        self.showAlert(title:"", message: json.result?.message ?? "Sorry something went wrong")
                     }
                 }
                 catch{
